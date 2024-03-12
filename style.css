@@ -1,0 +1,173 @@
+body{
+    background: #e9ecf8;
+}
+
+main{
+    margin: 3% 0;
+}
+
+.logo{
+    position: absolute;
+    top: 30px;
+    left: 3%;
+}
+
+.origen{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 120px 0 0 15%;
+}
+
+.producto{
+    background: white ;
+    width: 25%;
+    height: 630px;
+    margin: 0 0 0 10%;
+    display: inline-block;
+    vertical-align: top;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 5px;
+}
+
+.texto{
+    margin: 0 10%;
+    width: 80%;
+    background: none;
+    border: none;
+}
+
+section .parametrosTextoOrigen{
+    margin: 10px 0;
+    font-size: 12px;
+    color: #adb5bd;
+}
+
+form{
+    width: 100%;
+    margin: 15px 0;
+}
+
+.boton{
+    height: 40px;
+    text-align: center;
+    border-radius: 10px;
+    border-color: #052051;
+}
+
+#textoOrigen{
+    width: 98%;
+    height: 395px;
+    margin: 10px 0;
+    text-align:left;
+    color: #052051;
+    font-size: 25px;
+    resize: none;
+}
+
+#encriptar{
+    background: #0a3871;
+    color: white;
+    width: 45%;
+}
+
+#desencriptar{
+    width: 45%;
+    margin: 0 0 0 8%;
+}
+
+#copiar{
+    background: white;
+    color: #052051;
+    width: 80%;
+    margin: 10px 10%;
+}
+
+#textoGenerado{
+    margin: 40px 10% 0 10%;
+    width: 80%;
+    height: 520px;
+    font-size: 15px;
+    resize: none;
+}
+
+/*Nueva pagina*/
+
+.muñeco{
+    width: 90%;
+    margin: 140px 0 0 5%;
+}
+
+.producto h1{
+    width: 80%;
+    margin: 15px 10%;
+    text-align: center;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.producto h2{
+    width: 80%;
+    margin: 10px 10%;
+    text-align: center;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 900px) {
+    .origen{
+        width: 80%;
+        display: inline-block;
+        vertical-align: top;
+        margin: 100px 10% 0 10%;
+    }
+
+    .producto{
+        width: 80%;
+        height: auto;
+        margin: 40px 10% 0 10%;
+        display: inline-block;
+        vertical-align: top;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 0 5px;
+    }
+
+    .muñeco{
+        display: none;
+    }
+
+    .producto h1{
+        width: 80%;
+        margin: 5px 10% 0 10%;
+        text-align: center;
+        font-size: 23px;
+        font-weight: bold;
+    }
+    
+    .producto h2{
+        width: 80%;
+        margin: 5 10% 10% 10%;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    #textoGenerado{
+        margin: 40px 10% 0 10%;
+        height: auto;
+        width: 80%;
+        resize: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #encriptar{
+        width: 80%;
+        margin: 10px 10%;
+    }
+    
+    #desencriptar{
+        width: 80%;
+        margin: 10px 10%;
+    }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador ONE</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <!--Logo de alura en la parte superior-->
+        <h1><img src="imagenes/vectorlogo.png" class="logo" alt="Logo Alura"></h1>
+    </header>
+
+    <main>
+        <section class="origen">
+            <!--El cuadro en el que se ingresaran el texto para encriptar y desencriptar-->
+            <textarea cols="20" rows="10" id="textoOrigen" class="texto" placeholder="Ingrese el texto aqui"></textarea>
+            <p class="parametrosTextoOrigen">Solo letras minúsculas y sin acento </p>
+            <form>
+                <input type="button" value="Encriptar" id="encriptar" class="boton" onclick="encriptarTexto();">
+                <input type="button" value="Desencriptar" id="desencriptar" class="boton" onclick="desencriptarTexto();">
+            </form>
+        </section>
+        
+        <section id="pruebaImagen" class="producto">
+            <!--Cuadro de traduccion en estado de mostrar el teto traducido-->
+            <img src="imagenes/muñecomuñeco.png" id="personaje" class="muñeco" alt="muñeco con lupa">
+            <h1 id="textoEsperaUno">Ningun mensaje fue encontrado</h1>
+            <h2 id="textoEsperaDos">Ingrese el texto que desees encriptar o desencriptar</h2>
+            <!--Cuadro de traduccion en estado de prueba con el muñeco-->
+            <textarea id="textoGenerado" class="texto"></textarea> 
+            <input type="button" value="Copiar" id="copiar" class="boton" onclick="copiarTexto();">
+        </section>
+
+    </main>
+
+    <script src="funcion.js"></script>
+
+</body>
+
+</html>
